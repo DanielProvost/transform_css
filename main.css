@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes moreBig {
+   0%{
+       top: 30vh;
+       left:0;
+       transform: rotate(0deg);
+       }
+    100%{
+        top:74vh;
+        left: 86vw;
+        transform: rotate(360deg);
+    }
+ }
+h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+body{
+    height:100vh;
+    /*background-color: aquamarine;*/
+
+}
+span{
+    font-size: 0.8em;
+}
+.container_arbre{
+    display: flex;
+    background-color: #b2c03d;
+    padding-top: 20px;
+    padding-bottom:30px;
+    /*height: 80vh;*/
+}
+.bambou{
+    left: 0;
+    z-index: 4;
+}
+.bambou1{
+    margin-top: 160px;
+    z-index: 6;
+}
+.bambou2{
+    margin-top: 100px;
+    z-index: 4;
+}
+.bambou3{
+    margin-top: 300px;
+    z-index: 6;
+}
+.carre_rouge{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid red;
+}
+.container{
+    position: absolute;
+    display: flex;
+    max-width: 72px;
+    flex-wrap: wrap;
+    animation: moreBig 2s ease forwards;
+    top:30vh;
+    z-index: 5;
+}
+.hiden{
+    visibility: hidden;
+}
+.carre{
+    width: 24px;
+    height:24px;
+    background-color: red;
+}
+.triangle_droite{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 24px solid red;
+    border-bottom: 12px solid transparent;
+}
+.triangle_gauche{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 24px solid red;
+    border-bottom: 12px solid transparent;
+}
+.triangle_bas{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 24px solid red;
+}
+.rond{
+    position:absolute;
+    border-radius: 90px;
+    width: 24px;
+    height:24px;
+    background-color: white;
+}
+.tigre{
+    position: absolute;
+    top: 68vh;
+    left: 86vw;
+}
+.tete{
+    position: absolute;
+    margin-top: -68%;
+    margin-left: 8%;
+    z-index: 6;
+
+}
+
+footer p{
+       margin-top: 2%;
+   }
+
+
+
+
+/*instruction forwards bloque le retour à l'état initial'*/
